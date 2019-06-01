@@ -1,0 +1,108 @@
+
+<html>
+	<head>
+		<title>Lab3</title>
+    <style>
+      .inputRow{
+          padding: 20px;
+      }
+      .myLabel{
+          margin: 0;
+          padding: 0;
+          display: block;
+          font-size: 20px;
+          padding-top: 2px;
+          padding-right: 5px;
+          width: 200px;
+          text-align: left;
+          float: down;
+      }
+      form{
+          padding:20px;
+          border:2px solid lightgray;
+          width:40%;
+          box-shadow: 2px 2px 2px 2px green;
+      }
+
+      <select class="inputRow" name="list">
+        max-width: 50px;
+        min-width: 50px;
+      </select>
+
+      .myInput{
+          margin: 0;
+          padding: 0;
+          display: block;
+          box-shadow: 2px 2px green;
+          font-size: 30px;
+          width: 250px;
+          padding-left: 5px;
+          box-radius: 10px 10px;
+      }
+      input[type='button']{
+          width: 100px;
+          margin-left: 80%;
+          font-size: 20px;
+          background-color: lightgreen;
+          box-shadow: 2px 2px green;
+      }
+
+      .myInput:hover {
+        background-color: lightyellow;
+      }
+    </style>
+	</head>
+	<body>
+		<form action="processForm.php" method="POST">
+		    <!--entering the name -->
+		    <div class="inputRow">
+		        <label class="myLabel" for="name" class="myLabel">Your name</label>
+		        <input class="myInput" type="text" name="name" pattern="[A-Za-z]" placeholder="Name" required />
+        </div>
+
+        <!--email address-->
+		    <div class="inputRow">
+		        <label class="myLabel" for="email" class="myLabel">Email</label>
+		        <input class="myInput" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@address.com" required />
+		    </div>
+
+		    <!--username-->
+		    <div class = "inputRow">
+		        <label class="myLabel" for="username" class="myLabel">Username</label>
+		        <input class="myInput" type="text" name="username" pattern="[A-Za-z]*+[0-9]*" placeholder="name123" required />
+		    </div>
+
+		    <!--province-->
+		    <div class = "inputRow">
+		        <label class="myLabel">Province</label>
+            <select name = "list" id="province">
+              <option value = "Alberta">Alberta</option>
+              <option value = "British Columbia">British Columbia</option>
+              <option value = "Manitoba">Manitoba</option>
+              <option value = "New Brunswick">New Brunswick</option>
+              <option value = "Newfoundland and Labrador">Newfoundland and Labrador</option>
+              <option value = "Northwest Territories">Northwest Territories</option>
+              <option value = "Nova Scotia">Nova Scotia</option>
+              <option value = "Nunavut">Nunavut</option>
+              <option value = "Ontario">Ontario</option>
+              <option value = "Prince Edward Island">Prince Edward Island</option>
+              <option value = "Quebec">Quebec</option>
+              <option value = "Saskatchewan">Saskatchewan</option>
+              <option value = "Yukon">Yukon</option>
+            </select>
+		    </div>
+
+		    <!--postal code-->
+		    <div class="inputRow">
+		        <label class="myLabel" for="postal code" class"myLabel">Postal Code</label>
+		        <input class="myInput" type="text" name="postal code" pattern="[a-z][0-9][a-z][0-9][a-z][]0-9]" placeholder="a1a2c3" required/>
+		    </div>
+
+		    <!--submit button-->
+		    <div class="inputRow">
+		        <input class="myInput" type="button" name="go" value="Go!" />
+		    </div>
+
+	    </form>
+	</body>
+</html>
