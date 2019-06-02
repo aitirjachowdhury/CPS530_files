@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Lab3</title>
+		<style>
+
+		.inputRow{
+		    padding: 10px;
+		}
+		.myLabel{
+		    margin: 0;
+		    padding: 0;
+		    display: block;
+		    font-size: 100%;
+		    padding-top: 2px;
+		    padding-right: 5px;
+		    width: 200px;
+		    text-align: right;
+		    float: left;
+		}
+		form{
+		    padding:20px;
+		    border:2px solid lightgray;
+		    width:60%;
+		}
+
+		.myInput{
+		    margin: 0;
+		    padding: 0;
+		    display: block;
+		    font-size: 100%;
+		    width: 200px;
+		    padding-left: 5px;
+		    /*border:1px solid green; */
+		}
+		input[type='submit']{
+		    width: 100px;
+		    margin-left: 320px;
+		}
+		</style>
+	</head>
+	<body>
+		<form action="processForm.php" method="POST">
+		    <!--animals-->
+		    <div class="inputRow">
+		        <label class="myLabel" for="animal1" class="myLabel">Animal One</label>
+		        <input class="myInput" type="text" name="animal1" placeholder="First Animal" />
+		    </div>
+		    <div class="inputRow">
+		        <label class="myLabel" for="animal2" class="myLabel">Animal Two</label>
+		        <input class="myInput" type="text" name="animal2" placeholder="Second Animal" />
+		    </div>
+
+		    <!--hitpoints-->
+		    <div class = "inputRow">
+		        <label class="myLabel" for="hitPoints" class="myLabel">Hit Points</label>
+		        <input class="myInput" type="number" min="1" max="99" name="hitPoints" />
+		    </div>
+
+		    <!--dexterity-->
+		    <div class = "inputRow">
+		        <label class="myLabel" for="dexterity" class="myLabel">Dexterity</label>
+		        <input class="myInput" type="number" min="1" max="15" name="dexterity" />
+		    </div>
+
+		    <!--color-->
+		    <div class="inputRow">
+		        <label class="myLabel" for="colour" class"myLabel">Colour</label>
+		        <input class="myInput" type="color" name="colour" />
+		    </div>
+
+		    <!--submit button-->
+		    <div class="inputRow">
+		        <label class="myLabel" for="submit" class"myLabel">Submit</label>
+		        <input class="myInput" type="submit" name="go" value="Create!" />
+		    </div>
+
+	    </form>
+	</body>
+</html>
