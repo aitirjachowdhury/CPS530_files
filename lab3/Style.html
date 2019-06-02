@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Lab3</title>
+
     <style>
       .inputRow{
           padding: 20px;
@@ -18,7 +19,7 @@
           float: down;
       }
       form{
-          padding:20px;
+          padding: 20px;
           border:2px solid lightgray;
           width:40%;
           box-shadow: 2px 2px 2px 2px green;
@@ -50,9 +51,20 @@
       .myInput:hover {
         background-color: lightyellow;
       }
+
+      #button1, #button2, #button3 {
+        background-color: grey;
+        colour: blue;
+        width: 150px;
+        font-size: 20px;
+      }
+
     </style>
 	</head>
 	<body>
+    <button type="button home" id="button1" >home</button>
+    <button type="button forms" id="button2">Forms</button>
+    <button type="button styling-forms" id="button1" >Styling Forms</button>
 		<form action="processForm.php" method="POST">
 		    <!--entering the name -->
 		    <div class="inputRow">
@@ -77,7 +89,7 @@
 		        <label class="myLabel">Province</label>
             <select name = "list" id="province">
               <option value = "Alberta">Alberta</option>
-              <option value = "British Columbia">British Columbia</option>
+              <option selected = "British Columbia">British Columbia</option>
               <option value = "Manitoba">Manitoba</option>
               <option value = "New Brunswick">New Brunswick</option>
               <option value = "Newfoundland and Labrador">Newfoundland and Labrador</option>
