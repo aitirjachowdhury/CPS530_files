@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>HTML Calculator</title>
+  <style>
+    .form{
+      padding: 20px;
+      border:2px solid lightgray;
+      width:10px;
+    }
+
+    .inputRow[type='reset']{
+      font-size: 500px;
+      width: 400px;
+      margin-left: 40%;
+    }
+
+    .inputRow1[type='textfield']{
+      font-size: 100px;
+    }
+    .inputRow1[type='button']{
+      width: 200px;
+      font-size: 100%;
+    }
+  </style>
+</head>
+<body bgcolour= "pink" text= "black">
+  <form name="calculator" >
+
+    <div class = "inputRow">
+      <label class="myLabel" for="expression" class="myLabel">Enter expression: </label>
+      <input type="textfield" >
+      <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+      <input type="button" value="+" onClick="add();">
+      <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+      <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+      <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+    </div>
+
+    <div class = "inputRow">
+      <br>Solution: <input type="textfield" name="ans" value="">
+      <input type="reset" value="Clear">
+    </div>
+
+  </form>
+</body>
+</html>
