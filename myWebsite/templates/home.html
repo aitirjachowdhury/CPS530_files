@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery • HOME</title>
+        <script src="calendar.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <style media="screen">
+        body {
+          background: url("home-background-2.jpeg");
+          background-attachment: fixed;
+          background-size: 120%;
+          background-color: white;
+          margin: 10px 200px;
+        }
+        a.button{
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          appearance: button;
+
+          width::80%;
+          border:3px solid rgb(200, 200, 207);
+          padding:5px;
+          border-radius:3px;
+          margin:5px 10px 20px 35px;
+        }
+        select{
+          width::80%;
+          border:3px solid rgb(200, 200, 207);
+          height:42px;
+          padding:5px;
+          border-radius:3px;
+          margin:5px 10px 20px 35px;
+        }
+
+        .copyright{
+          margin-top: 60%;
+        }
+        </style>
+    </head>
+
+    <body text= "black">
+      <div class="intro">
+        <h1 >Hello!</h1>
+        <div class="intro" text="black">
+          <a href="image.html" type="button" class="button">Create</a>   <!-- ADDS PICTURES -->
+          <a href="image.html" class="button" type="button">View</a>
+          <a href="startUp.html" class="button" type="button">Log-Out</a>
+        </div>
+
+      </div>
+        <!-- calendar start -->
+        <div class="calendar">
+            <h2>View Picto-calendar</h2>
+            <select class="calendar" id="format" placeholder="Select Date">
+              <option value="mm/dd/yy">Default - mm/dd/yyyy</option>
+              <option value="dd/mm/yy">dd/mm/yyyy</option>
+              <option value="yy-mm-dd">ISO 8601 - yyyy-mm-dd</option>
+              <option value="d M, y">Short - d M, y</option>
+              <option value="d MM, y">Medium - d MM, y</option>
+              <option value="DD, d MM, yy">Full - DD, d MM, yyyy</option>
+              <option value="&apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy">With text - 'day' d 'of' MM 'in the year' yyyy</option>
+            </select>
+        </div>
+        <!-- calendar end -->
+
+        <!-- Contacts section start -->
+        <div class="section" id="contacts">
+            <h4><span>Contact Support</span></h4>
+            <form>
+                <input name="name" placeholder="Name" type="text" required /><br/>
+                <input name="email" placeholder="Email" type="email" required /><br/>
+                <textarea name="message" placeholder="Enter your message here." required ></textarea>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
+        </div>
+        <!-- Contacts section end -->
+
+        <div class="copyright">
+            &copy; 2019 Gallery. All rights reserved.
+        </div>
+
+    </body>
+</html>
