@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery • Start-Up!</title>
+    <style media="screen">
+      body {
+        background: url("summer-rain-wallpaper.jpg");
+        background-attachment: fixed;
+        background-size: 120%
+      }
+      a.button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+
+        text-decoration: none;
+        width: 80px;
+        text-align: center;
+        color: black;
+        background-color: lightgreen;
+      }
+      form{
+        margin: 2% 50%;
+        background-position: top center;
+        padding: 10px;
+        opacity: 0.3;
+        border:2px;
+        width:40%;
+        box-shadow: 2px 2px 1px 1px lightgreen;
+      }
+      form:hover{
+        opacity: 1;
+      }
+      .headers{
+        margin: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headers">
+      <h1 text="white">Picto-Gallery</h1>
+      <h3 text-changeColour = "white">
+          An easy application to store all those pictures that you don't have any space for on your phone or hard-drive.
+      </h3>
+    </div>
+    <form style="background-color:white" class="signUp" method="post">
+      <h2>Welcome Back!</h2>
+      <div class="logIn">
+        <label for="username">Username: </label>
+        <input type="myInput" name="username" pattern="[A-Za-z]*+[0-9]*" required />
+      </div>
+      <div class="logIn">
+        <label for="password">Password: </label>
+        <input type="myInput" name="password" pattern="[A-Za-z]*+[0-9]*" required />
+      </div>
+      <div class="logIn" text="white">
+        <a href="home.html" class="button" type="button">Log-In</a>
+      </div>
+    </form>
+    <form  style="background-color:white" class="login" method="post" required>
+      <h2>New user? Sign up here!</h2>
+      <div class="signUp">
+        <label for="name">Name: </label>
+        <input type="myInput" name="name" pattern="[A-Za-z]" placeholder="Enter your name" required />
+      </div>
+      <div class="signUp">
+        <label for="username">Username: </label>
+        <input type="myInput" name="username" pattern="[A-Za-z]*+[0-9]*" placeholder="Make it unique!" required />
+      </div>
+      <div class="signUp">
+        <label for="password">Password: </label>
+        <input type="myInput" name="password" pattern="[A-Za-z]*+[0-9]*" placeholder="Make it strong!" required />
+      </div>
+      <div class="signUp" text="white">
+        <a href="home.html" class="button" type="button">Sign-up</a>
+      </div>
+    </form>
+          &copy; 2019 Gallery. All rights reserved.
+  </body>
+</html>
