@@ -1,0 +1,1 @@
+web: gunicorn CPS530:app
